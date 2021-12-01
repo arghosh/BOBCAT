@@ -36,7 +36,7 @@ If you find this code useful in your research then please cite
   pages     = {2410--2417},
   year      = {2021},
   month     = {8},
-  note      = {Main Track}
+  note      = {Main Track},
   doi       = {10.24963/ijcai.2021/332},
   url       = {https://doi.org/10.24963/ijcai.2021/332},
 }
