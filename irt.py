@@ -149,7 +149,7 @@ if __name__ == "__main__":
     #
     data_path = os.path.normpath('data/train_task_'+params.dataset+'.json')
     train_data, valid_data, test_data = data_split(
-        data_path, params.fold, params.subset, params.seed)
+        data_path, params.fold, params.seed)
     valid_dataset, test_dataset = Dataset(valid_data), Dataset(test_data)
     n_users, n_question = len(train_data), params.n_question
     for idx, d in enumerate(train_data):
