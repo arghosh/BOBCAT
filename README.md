@@ -23,6 +23,22 @@ python train.py\
     --cuda
 ```
 
+Hyperparameter ranges are:
+```(bash)
+hyperparameters = [
+    [('dataset',), ['ednet', 'eedi-1', 'eedi-3', 'assist2009', 'junyi']],
+    [('model',), ['biirt-active', 'biirt-random', 'biirt-unbiased','biirt-biased', 'binn-active', 'binn-random', 'binn-unbiased','binn-biased']],
+    [('fold',), [ 1, 2, 3, 4, 5 ]],
+    [('hidden_dim'), [256]],
+    [('lr',), [ 1e-3 ]],
+    [('inner_lr',), [ 2e-1, 1e-1, 5e-2]],
+    [('meta_lr',), [ 1e-4 ]],
+    [('inner_loop',), [ 5 ]],
+    [('policy_lr',), [2e-3,  2e-4]],
+    [('n_query',), [1, 3, 5, 10]]
+]
+```
+
 ## Citation
 If you find this code useful in your research then please cite  
 ```(bash)
